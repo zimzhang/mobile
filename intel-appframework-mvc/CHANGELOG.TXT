@@ -1,0 +1,19 @@
+# CHANGELOG.TXT
+
+Added get/set on models for properties
+
+* IMPORTANT - storage "get" and "getAll" have been renamed "fetch" and "fetchAll"
+
+Added .storageAdapter() function on models to get the storage adapter to call functions on'
+
+Added ._prepModel() - this is used for when retrieving values of a model and creating the object (like fetching from a storageAdapter)
+
+Models can have a "validate" function that gets called when you call .set() on properties.  It will automatically check validation.  
+
+.set() now has a third parameter (options)
+   options.silent - don't display an error message
+   options.error(model,message,errorFnc) - error function for validation callback. Your validation function can return true for success or a string which gets pased in as message
+
+   ```
+   .set("name","Joe",{silent:false,error:function(model,msg){console.log("alert "+msg);}})
+

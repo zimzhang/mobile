@@ -1,0 +1,21 @@
+{
+  "name": "intel-appframework-mvc",
+  "homepage": "http://app-framework-software.intel.com/docmvc.php",
+  "description": "MVC is a lightweight MVC framework",
+  "version": "1.0.1",
+  "keywords": [
+    "mobile", "app", "html5", "hybrid", "cordova", "phonegap", "tablet", "touch"
+  ],
+  "repository": {
+    "type": "git",
+    "url" : "git@github.com:01org/appframeworkMVC.git"
+  },
+  "main": "af.mvc.min.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
